@@ -12,7 +12,7 @@ class DayCard extends StatelessWidget {
 
   const DayCard({
     Key key,
-    @required this.isTheDay,
+    this.isTheDay = false,
     @required this.dayName,
     @required this.dataNumber,
     @required this.lessonsQuantities,
@@ -62,7 +62,7 @@ class DayCard extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 10),
-              Text("Total cost $dayCost"),
+              Text("Total cost \$$dayCost"),
             ],
           ),
         ),
