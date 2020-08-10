@@ -124,7 +124,8 @@ class _cardDayScheduleState extends State<cardDaySchedule> {
           child: Row(
             children: [
               Container(
-                child: Icon(Icons.account_balance, color: AppColors.darkGreen, size: 50),
+                child: Icon(Icons.account_balance,
+                    color: AppColors.darkGreen, size: 50),
                 width: 115,
                 height: 175,
               ),
@@ -218,7 +219,6 @@ class _cardDayScheduleState extends State<cardDaySchedule> {
           width: 275,
           height: 150,
         ),
-        
         DottedBorder(
           borderType: BorderType.RRect,
           radius: Radius.circular(15),
@@ -252,7 +252,11 @@ class _cardDayScheduleState extends State<cardDaySchedule> {
                             borderRadius: BorderRadius.circular(50),
                             color: Colors.blue[50],
                           ),
-                          child: Icon(Icons.add, color: AppColors.darkBlue, size: 35,),
+                          child: Icon(
+                            Icons.add,
+                            color: AppColors.darkBlue,
+                            size: 35,
+                          ),
                           width: 60,
                           height: 60,
                         )
